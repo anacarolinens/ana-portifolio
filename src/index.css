@@ -1,6 +1,31 @@
 @import "tailwindcss";
 
 /* ____________________________ *\
+* THEME STYLES
+\* ____________________________ */
+
+@theme {
+  /* Cores personalizadas */
+  --color-bg-light: #ececec;
+  --color-bg-lighter: #e9e8e8;
+  --color-bg-button: #DCDCDC;
+  --color-border-gray: #e3e3e3;
+  --color-custom-gray: #CDC0C066;
+  --color-shadow-gray: #353535;
+  --color-gradient-start: #E5E5E5;
+  --color-gradient-end: #D4D4D4;
+  --color-gradient-hover-start: #696969;
+  --color-gradient-hover-end: #393939;
+  --color-hover-gray: #383838;
+
+  /* Sombra personalizada */
+  --shadow-custom: 0 0 8.9px -2px var(--color-shadow-gray);
+
+  /* Fonte personalizada */
+  --font-jost: "Jost", sans-serif;
+}
+
+/* ____________________________ *\
 * BASE STYLES
 \* ____________________________ */
 
@@ -9,5 +34,69 @@ html {
 }
 
 body {
-  @apply bg-white text-[#353535] h-[200vh];
+  @apply font-jost bg-white text-custom-gray h-[200vh];
+}
+
+/* ____________________________ *\
+* COMPONENTS
+\* ____________________________ */
+
+/* Menu bnt */
+
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop:blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95;
+}
+
+/* globals.css */
+
+.nav-link {
+  @apply relative inline-block text-gray-700 hover:text-gray-900 transition;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-0 h-[2px] bg-[var(--color-hover-gray)] transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-1/2;
+}
+
+
+/* ____________________________ *\
+* UTILITITIES
+\* ____________________________ */
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+
+/* ____________________________ *\
+* ANIMATIONS
+\* ____________________________ */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+/* Class to apply blinking animation */
+.animate-blink {
+  animation: blink 2s ease-in-out infinite;
+}
+
+/* Utility classes for cross lines */
+.cross {
+  position: absolute;
+}
+.cross__vertical,
+.cross__horizontal {
+  position: absolute;
+  background-color: var(--color-gradient-start);
+}
+.cross__vertical {
+  width: 2px;
+}
+.cross__horizontal {
+  height: 2px;
 }

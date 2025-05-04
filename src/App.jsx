@@ -3,12 +3,23 @@
  * @license Apache-2.0
  */
 
+/**
+ * 
+ * Components
+ */
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+
 const App = () => {
     return (
-        <div>
-        <h1>Hello, World!</h1>
-        <p>This is a simple React application.</p>
-        </div>
+        <>
+            <Header />
+            <main>
+                <Hero />
+                <About />
+            </main>
+        </>
     );
     }
 export default App;
