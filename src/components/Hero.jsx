@@ -12,9 +12,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative mx-auto w-full max-w-screen-xl flex flex-col lg:flex-row justify-center items-center lg:items-start pt-[230px] pb-0 px-4 lg:px-6 overflow-hidden"
+      className="relative mx-auto w-full max-w-screen-xl flex flex-col lg:flex-row justify-center items-center lg:items-start pt-[240px] pb-0 px-4 lg:px-6 overflow-hidden"
     >
-  
       <div className="z-10 w-full lg:w-1/2 text-center lg:text-left px-4 lg:px-0 lg:mb-0 mb-25">
         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-2 tracking-wide">
           Desenvolvedora Web Full-Stack
@@ -29,7 +28,7 @@ const Hero = () => {
         <div className="flex justify-center lg:justify-start gap-6">
           <a
             href="#linkedin"
-            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] hover:bg-[var(--color-bg-button)] transition-colors duration-300"
+            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
           >
             <img
               src="/images/linkedin.svg"
@@ -42,7 +41,7 @@ const Hero = () => {
           </a>
           <a
             href="#GitHub"
-            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] hover:bg-[var(--color-bg-button)] transition-colors duration-300"
+            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
           >
             <img
               src="/images/github.svg"
@@ -57,7 +56,7 @@ const Hero = () => {
       </div>
 
       <div className="relative w-full lg:w-1/2 flex justify-end">
-        <figure className="hidden lg:block w-[300px] sm:w-[350px] md:w-[395px] h-auto transform -translate-y-8 mx-auto lg:mx-0 mb-8 lg:mb-0">
+        <figure className="hidden lg:block w-[300px] sm:w-[350px] md:w-[395px] h-auto transform -translate-y-8 mx-auto lg:mx-0 lg:mb-0">
           <img src="/images/hero-image.svg" alt="Hero Image" />
         </figure>
       </div>

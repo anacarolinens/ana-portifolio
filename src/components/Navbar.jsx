@@ -1,12 +1,3 @@
-/**
- * @copyright 2025 Ana
- * @license Apache-2.0
- */
-
-/**
- * Components
- */
-
 import React from "react";
 
 const Navbar = () => {
@@ -21,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="relative flex items-center">
       {/* Desktop links */}
-      <ul className="hidden md:flex space-x-6 text-[18px] text-gray-700">
+      <ul className="hidden md:flex items-center space-x-6 text-[18px] text-gray-700">
         <li>
           <a href="#sobre" className="nav-link">
             Sobre mim
@@ -41,7 +32,7 @@ const Navbar = () => {
         <li>
           <a
             href="#resume"
-            className="px-6 py-2 rounded-[9px] text-[18px] font-normal text-white bg-[var(--color-hover-gray)] hover:bg-[var(--color-bg-button)] transition-colors duration-300"
+            className="inline-flex items-center px-6 py-2 rounded-[9px] text-[18px] font-normal text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-105"
           >
             <img
               src="/images/download.svg"
@@ -124,8 +115,8 @@ const Navbar = () => {
           <li className="border-t border-gray-200 px-4 py-4">
             <a
               href="/files/curriculo-ana-caroline.pdf"
-              download="Curriculo_AnaCaroline.pdf"
-              className="block px-2 py-3 rounded-2xl text-white bg-[var(--color-hover-gray)] hover:bg-[var(--color-bg-button)] transition-colors duration-300"
+              download="curriculo_ana_caroline.pdf"
+              className="inline-flex items-center px-2 py-3 rounded-[9px] text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-105"
             >
               <img
                 src="/images/download.svg"

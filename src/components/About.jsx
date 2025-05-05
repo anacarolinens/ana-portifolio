@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative mx-auto w-full max-w-screen-xl min-h-screen flex items-start justify-center pt-2 px-4 md:px-6"
+      className="relative mx-auto w-full max-w-screen-xl flex items-start justify-center px-4 md:px-6 py-10"
     >
       <figure className="hidden lg:block lg:absolute lg:left-0 lg:top-10  w-[100px] sm:w-[150px] md:w-[250px] h-auto">
         <img src="/public/images/about-image.svg" alt="About Image" />
@@ -30,19 +30,19 @@ const About = () => {
         <span className="block w-18 h-0.5 bg-[var(--color-shadow-gray)] mt-2 mb-12 "></span>
 
         <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-          Desenvolvedora Full-Stack, graduada em Sistemas de Informação e técnica em Informática,
-          com sólida experiência em suporte técnico de TI e formação em
-          Desenvolvimento Web Full-Stack pelo WebAcademy. Minha trajetória me
-          permitiu ter conhecimento tanto da infraestrutura de TI quanto as principais
-          tecnologias de front‑end e back‑end, garantindo soluções completas e
-          eficientes.
+          Desenvolvedora Full-Stack, graduada em Sistemas de Informação e
+          técnica em Informática, com sólida experiência em suporte técnico de
+          TI e formação em Desenvolvimento Web Full-Stack pelo WebAcademy. Minha
+          trajetória me permitiu ter conhecimento tanto da infraestrutura de TI
+          quanto as principais tecnologias de front‑end e back‑end, garantindo
+          soluções completas e eficientes.
         </p>
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
           Movida por desafios, combino minhas habilidades técnicas a uma
           abordagem analítica para resolver problemas e aprimorar a experiência
           do usuário. Estou em busca de novas oportunidades em desenvolvimento
-          de software, onde possa aplicar meu conhecimento e boas ideias em projetos incriveis e
-          inovadores.
+          de software, onde possa aplicar meu conhecimento e boas ideias em
+          projetos incriveis e inovadores.
         </p>
       </div>
     </section>
