@@ -6,31 +6,33 @@
 /**
  * Components
  */
-
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
+    id: 1,
     title: "SEJUSP - Estágio em Suporte",
     description: `Atividades como manutenção e reparo de computadores, suporte a aplicativos desktop,
 atendimento ao cliente, instalação de software e hardware, suporte técnico e documentação adequada.`,
     date: "2020 - 2021",
   },
   {
+    id: 2,
     title: "MPF - Estágio em Suporte",
     description: `Atendimento ao cliente, instalação de software e hardware, suporte técnico, manutenção
 corretiva e preventiva de computadores e documentação.`,
     date: "2021 - 2023",
-    img: "/public/images/Logo_MPF.png"
   },
   {
+    id: 3,
     title: "WebAcademy - Hands‑On",
     description: `Experiência com metodologias ágeis (Scrum, Planning Poker, Kanban). 
 Habilidades em JavaScript, Java, Node.js, Angular, Spring Boot. Projeto real de automação de agendamento.`,
     date: "2023",
   },
   {
+    id: 4,
     title: "SDTI - Estágio em Dev Web Jr.",
     description: `Criação de páginas web com Laravel, VueJS, TailwindCSS, HTML, CSS, JavaScript, Git/GitHub e Docker.`,
     date: "2023 - 2025",
@@ -42,9 +44,7 @@ const ExperienceList = () => (
     {experiences.map((exp) => (
       <div key={exp.id} className="flex-shrink-0">
         <ExperienceCard
-          img={exp.img}
           title={exp.title}
-          subtitle={exp.subtitle}
           description={exp.description}
           date={exp.date}
         />
@@ -52,4 +52,5 @@ const ExperienceList = () => (
     ))}
   </section>
 );
+
 export default ExperienceList;
