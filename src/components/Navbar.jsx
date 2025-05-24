@@ -32,7 +32,7 @@ const Navbar = () => {
         <li>
           <a
             href="#resume"
-            className="inline-flex items-center px-6 py-2 rounded-[9px] text-[18px] font-normal text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-105"
+            className="inline-flex items-center px-6 py-2 rounded-[9px] text-[18px] font-normal text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-115"
           >
             <img
               src="/images/download.svg"
@@ -116,7 +116,7 @@ const Navbar = () => {
             <a
               href="/files/curriculo-ana-caroline.pdf"
               download="curriculo_ana_caroline.pdf"
-              className="inline-flex items-center px-2 py-3 rounded-[9px] text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-105"
+              className="inline-flex items-center px-2 py-3 rounded-[9px] text-white bg-[var(--color-hover-gray)] transform transition-transform duration-300 hover:scale-115"
             >
               <img
                 src="/images/download.svg"

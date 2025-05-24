@@ -27,8 +27,8 @@ const Hero = () => {
         </p>
         <div className="flex justify-center lg:justify-start gap-6">
           <a
-            href="#linkedin"
-            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
+            href="https://linkedin.com/in/anacarolinens"
+            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-115"
           >
             <img
               src="/images/linkedin.svg"
@@ -40,8 +40,8 @@ const Hero = () => {
             Linkedin
           </a>
           <a
-            href="#GitHub"
-            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
+            href="https://github.com/anacarolinens"
+            className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-115"
           >
             <img
               src="/images/github.svg"
