@@ -28,6 +28,7 @@ const Hero = () => {
         <div className="flex justify-center lg:justify-start gap-6">
           <a
             href="https://linkedin.com/in/anacarolinens"
+            target="_blank"
             className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-115"
           >
             <img
@@ -41,6 +42,7 @@ const Hero = () => {
           </a>
           <a
             href="https://github.com/anacarolinens"
+            target="_blank"
             className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-115"
           >
             <img

@@ -13,7 +13,6 @@ import About from "./components/About";
 import ExperienceList from "./components/ExperienceList";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
         <ExperienceList />
         <Skills />
         <Projects />
-        {/* <Contact /> */}
       </main>
       <Footer />
     </>

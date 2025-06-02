@@ -24,18 +24,26 @@ const About = () => {
           className="w-12 h-auto mb-8"
         />
 
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800 uppercase">
+        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-medium text-gray-800 uppercase">
           Quem sou eu
         </h2>
         <span className="block w-18 h-0.5 bg-[var(--color-shadow-gray)] mt-2 mb-12"></span>
 
         <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
           Desenvolvedora Full-Stack, graduada em Sistemas de Informação e
-          técnica em Informática, com sólida experiência em suporte técnico de
-          TI e formação em Desenvolvimento Web Full-Stack pelo WebAcademy. Minha
-          trajetória me permitiu ter conhecimento tanto da infraestrutura de TI
-          quanto as principais tecnologias de front‑end e back‑end, garantindo
-          soluções completas e eficientes.
+          técnica em Informática, com experiência em suporte técnico de TI e
+          capacitação em Desenvolvimento Web Full-Stack pelo
+          <a
+            href="https://webacademy.ufac.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text hover:underline"
+          >
+            WebAcademy
+          </a>
+          . Minha trajetória me permitiu ter conhecimento tanto da
+          infraestrutura de TI quanto as principais tecnologias de front‑end e
+          back‑end, garantindo soluções completas e eficientes.
         </p>
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
           Movida por desafios, combino minhas habilidades técnicas a uma

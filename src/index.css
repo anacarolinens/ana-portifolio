@@ -10,6 +10,9 @@
   --color-bg-lighter: #e9e8e8;
   --color-bg-lighte: #EBEAEA;
   --color-bg-button: #DCDCDC;
+  --color-bg-proj-btn: #DBDBDB;
+  --color-bg-proj-hover: #B7B6B6;
+  --color-bg-sub-gray: #818181;
   --color-border-gray: #e3e3e3;
   --color-custom-gray: #CDC0C066;
   --color-shadow-gray: #353535;
@@ -70,6 +73,17 @@ body {
 
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Esconde scroll no Chrome, Edge e Safari */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconde no Firefox e IE */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 
