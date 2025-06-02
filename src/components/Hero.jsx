@@ -23,7 +23,7 @@ const Hero = () => {
         </h1>
         <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8">
           Oi, me chamo Ana. Sou formada em Sistema de Informação e sou
-          programadora full-stack.
+          programadora web full-stack.
         </p>
         <div className="flex justify-center lg:justify-start gap-6">
           <a
