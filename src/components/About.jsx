@@ -32,19 +32,20 @@ const About = () => {
         <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
           Desenvolvedora Full-Stack, graduada em Sistemas de Informação e
           técnica em Informática, com experiência em suporte técnico de TI e
-          capacitação em Desenvolvimento Web Full-Stack pelo
+          capacitação em Desenvolvimento Web Full-Stack pelo{" "}
           <a
             href="https://webacademy.ufac.br/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text hover:underline"
+            className="hover:underline"
           >
             WebAcademy
           </a>
           . Minha trajetória me permitiu ter conhecimento tanto da
-          infraestrutura de TI quanto as principais tecnologias de front‑end e
-          back‑end, garantindo soluções completas e eficientes.
+          infraestrutura de TI quanto as principais tecnologias de front-end e
+          back-end, garantindo soluções completas e eficientes.
         </p>
+
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
           Movida por desafios, combino minhas habilidades técnicas a uma
           abordagem analítica para resolver problemas e aprimorar a experiência
