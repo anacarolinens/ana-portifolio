@@ -1,8 +1,6 @@
-# Ana Caroline – Portfólio Pessoal
+# 👩‍💻 Ana Caroline – Portfólio Pessoal
 
-Apresentação dos meus projetos, experiências e contatos em um site moderno, responsivo e desenvolvido com tecnologias atuais.
-
----
+*Apresentando meus projetos, experiências e contatos em um site moderno, responsivo e desenvolvido com tecnologias atuais.*  
 
 
 ## 📝 Descrição
