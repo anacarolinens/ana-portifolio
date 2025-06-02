@@ -57,7 +57,7 @@ const ContactModal = ({ isOpen, onClose }) => {
             <div className="flex space-x-4">
               <a href="mailto:caroline.ana.n.s@gmail.com" className="block">
                 <img
-                  src="/public/images/gmail.svg"
+                  src="/images/gmail.svg"
                   alt="Gmail"
                   className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
                 />
@@ -69,7 +69,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 className="block"
               >
                 <img
-                  src="/public/images/linkedin-blue.svg"
+                  src="/images/linkedin-blue.svg"
                   alt="LinkedIn"
                   className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
                 />
@@ -81,7 +81,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 className="block"
               >
                 <img
-                  src="/public/images/github-dark.svg"
+                  src="/images/github-dark.svg"
                   alt="GitHub"
                   className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
                 />
@@ -93,7 +93,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 className="block"
               >
                 <img
-                  src="/public/images/discord.svg"
+                  src="/images/discord.svg"
                   alt="Discord"
                   className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
                 />
