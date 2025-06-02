@@ -159,5 +159,6 @@ Ana Caroline
 > Sinta-se à vontade para entrar em contato para colaborações, feedback ou apenas para trocar ideias sobre desenvolvimento web!
 > Obrigada por visitar meu portfólio! Espero que goste do resultado e fique à vontade para explorar outros projetos.
 > Se tiver alguma dúvida ou sugestão, não hesite em me contatar.
-> Desenvolvido com ❤️ por Ana Caroline – © 2025.
+
+Desenvolvido com ❤️ por Ana Caroline – © 2025.
 
