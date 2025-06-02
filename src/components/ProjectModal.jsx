@@ -6,10 +6,11 @@
 /**
  * Components
  */
+
 import React from "react";
 import ReactDOM from "react-dom";
 
-const ContactModal = ({ isOpen, onClose }) => {
+const ProjectModal = ({ isOpen, onClose, project }) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
@@ -18,7 +19,7 @@ const ContactModal = ({ isOpen, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-2xl max-w-3xl w-full mx-4 max-h-[90vh] overflow-auto shadow-lg"
+        className="relative bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-lg"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -41,70 +42,78 @@ const ContactModal = ({ isOpen, onClose }) => {
           </svg>
         </button>
 
-        <section
-          id="contact-modal"
-          className="flex flex-col lg:flex-row items-start justify-start px-6 md:px-8 py-10"
-        >
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800 uppercase mb-4">
-              Contato
-            </h2>
-            <span className="block w-18 h-0.5 bg-[var(--color-shadow-gray)] mb-8"></span>
-            <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-prose">
-              Sinta-se à vontade para entrar em contato comigo através dos
-              canais abaixo.
-            </p>
-            <div className="flex space-x-4">
-              <a href="mailto:caroline.ana.n.s@gmail.com" className="block">
-                <img
-                  src="/public/images/gmail.svg"
-                  alt="Gmail"
-                  className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/anacarolinens/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img
-                  src="/public/images/linkedin-blue.svg"
-                  alt="LinkedIn"
-                  className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
-                />
-              </a>
-              <a
-                href="https://github.com/anacarolinens"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img
-                  src="/public/images/github-dark.svg"
-                  alt="GitHub"
-                  className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
-                />
-              </a>
-              <a
-                href="https://discord.com/users/523169642966155264"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img
-                  src="/public/images/discord.svg"
-                  alt="Discord"
-                  className="w-12 h-12 rounded-full hover:opacity-80 duration-300 transition-transform hover:scale-115"
-                />
-              </a>
-            </div>
+        <div className="p-16 overflow-auto max-h-[90vh]">
+          <h2 className="text-5xl text-gray-800 mb-2 mt-8">{project.title}</h2>
+          <p className="text-[var(--color-bg-sub-gray)] text-1x2 mb-4">
+            {project.subtitle}
+          </p>
+          <span className="block w-16 h-0.5 bg-[var(--color-shadow-gray)] mb-8"></span>
+
+          <div className="flex flex-wrap items-center gap-4 mb-8">
+            {project.technologies?.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Tecnologia ${index + 1}`}
+                className="h-8 w-auto duration-300 transition-transform hover:scale-115"
+              />
+            ))}
           </div>
-        </section>
+
+          <p className="text-gray-700 font-semibold mb-2">
+            Descrição do projeto:
+          </p>
+          <p className="text-gray-700 mb-8">{project.description}</p>
+
+          {project.imageM && Array.isArray(project.imageM) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 mt-6">
+              {project.imageM.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`${project.title} imagem ${index + 1}`}
+                  className="w-full h-auto rounded-xl mb-4 border border-[var(--color-border-gray)] duration-300 transition-transform hover:scale-105"
+                />
+              ))}
+            </div>
+          )}
+
+          <div className="flex justify-center space-x-4">
+            <a
+              href={project.url}
+              target="_blank"
+              className="flex items-center px-6 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
+            >
+              <img
+                src="/images/link.svg"
+                alt="Link Logo"
+                width={20}
+                height={20}
+                className="mr-3"
+              />
+              Ver o projeto
+            </a>
+
+            <a
+              href={project.githubLink}
+              target="_blank"
+              className="flex items-center px-12 py-3 rounded-[9px] text-sm sm:text-[18px] font-normal text-white bg-[var(--color-hover-gray)] duration-300 transition-transform hover:scale-105"
+            >
+              <img
+                src="/images/github.svg"
+                alt="GitHub Logo"
+                width={20}
+                height={20}
+                className="mr-3"
+              />
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </div>,
     document.body
   );
 };
 
-export default ContactModal;
+export default ProjectModal;
