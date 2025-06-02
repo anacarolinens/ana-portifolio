@@ -1,22 +1,9 @@
 # Ana Caroline – Portfólio Pessoal
 
-> Apresentação dos meus projetos, experiências e contatos em um site moderno, responsivo e desenvolvido com tecnologias atuais.
+Apresentação dos meus projetos, experiências e contatos em um site moderno, responsivo e desenvolvido com tecnologias atuais.
 
 ---
 
-## 📋 Tabela de Conteúdos
-
-- [Descrição](#descrição)  
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)  
-- [Funcionalidades](#funcionalidades)  
-- [Demonstração](#demonstração)  
-- [Instalação e Execução](#instalação-e-execução)  
-- [Estrutura de Pastas](#estrutura-de-pastas)  
-- [Contribuições](#contribuições)  
-- [Licença](#licença)  
-- [Autor e Contato](#autor-e-contato)  
-
----
 
 ## 📝 Descrição
 
@@ -43,7 +30,7 @@ Este repositório contém o meu **portfólio pessoal**, construído com **React*
   [Site oficial](https://tailwindcss.com/)
 
 - **ReactDOM**  
-  Utilizado para renderizar o modal de contato em uma porta (`portal`) no DOM.
+  Utilizado para renderizar o modal de contato em uma porta (`portal`) no DOM. 
   [Documentação](https://react.dev/reference/react-dom/createPortal)
 
 ---
@@ -159,7 +146,7 @@ Para contribuir:
 ---
 
 ## 📜 Licença
-Este projeto está licenciado sob a licença Apache License 2.0. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+> Este projeto está licenciado sob a licença Apache License 2.0. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 ---
 
 ## 👤 Autor e Contato
