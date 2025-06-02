@@ -3,12 +3,31 @@
  * @license Apache-2.0
  */
 
+/**
+ * 
+ * Components
+ */
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ExperienceList from "./components/ExperienceList";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+
 const App = () => {
-    return (
-        <div>
-        <h1>Hello, World!</h1>
-        <p>This is a simple React application.</p>
-        </div>
-    );
-    }
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <ExperienceList />
+        <Skills />
+        <Projects />
+      </main>
+      <Footer />
+    </>
+  );
+};
 export default App;

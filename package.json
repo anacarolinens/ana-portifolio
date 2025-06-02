@@ -1,7 +1,7 @@
 {
   "name": "ana-portifolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "swiper": "^11.2.6",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
