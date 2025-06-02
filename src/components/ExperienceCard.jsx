@@ -12,7 +12,7 @@ const ExperienceCard = ({ title, description, date }) => (
   <div className="w-66 bg-gradient-to-r from-[var(--color-bg-light)] to-[var(--color-bg-lighte)] backdrop-blur-md border border-[var(--color-border-gray)] rounded-lg shadow p-4 flex flex-col justify-between text-gray-800 h-95 pt-10 mt-16 duration-300 transition-transform hover:scale-105">
     {/* Logo */}
     <div className="flex justify-center mb-4">
-      <img src="/public/images/exp.png" alt="Experience Logo" className="w-6" />
+      <img src="/images/exp.png" alt="Experience Logo" className="w-6" />
     </div>
 
     {/* Title */}
