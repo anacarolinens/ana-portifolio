@@ -78,9 +78,7 @@ Este repositório contém o meu **portfólio pessoal**, construído com **React*
 ## 🔗 Demonstração
 
 > **URL do Deploy:**  
-> [Ver Portfólio Online](https://seu-usuario.github.io/ana-portfolio)
-
-> Caso ainda não esteja publicado, substitua pelo link adequado ou adicione um status “Em breve”.
+> [Ver Portfólio Online](https://anacarolinedev.netlify.app/)
 
 ---
 
