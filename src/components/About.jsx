@@ -15,7 +15,7 @@ const About = () => {
       className="relative mx-auto w-full max-w-screen-xl flex items-start justify-center px-4 md:px-6 py-0 mb-12"
     >
       <figure className="hidden lg:block lg:absolute lg:left-0 lg:top-10 transform -translate-x-8 w-[100px] sm:w-[150px] md:w-[250px] h-auto mx-auto">
-        <img src="/public/images/about-image.svg" alt="About Image" />
+        <img src="/images/about-image.svg" alt="About Image" />
       </figure>
       <div className="z-10 flex flex-col items-center text-center px-4 lg:px-0 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-prose transform translate-x-4 lg:translate-x-8">
         <img
